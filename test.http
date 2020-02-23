@@ -1,0 +1,33 @@
+
+GET http://localhost:8000/api/pets HTTP/1.1
+
+###
+
+POST http://localhost:8000/api/pet HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "philip",
+    "type": "cat",
+    "description": "she's a great cat..."
+}
+
+###
+
+GET http://localhost:8000/api/pet/5e4fe728902a676acc031878 HTTP/1.1
+
+###
+
+PUT http://localhost:8000/api/pet/5e51967bee292648dc26a8f1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "marsarahy",
+    "type": "cat",
+    "description": "she's a great cat...",
+    "skill_one": "basketball"
+}
+
+###
+
+DELETE http://localhost:8000/api/pet/5e4fe712902a676acc031877 HTTP/1.1
